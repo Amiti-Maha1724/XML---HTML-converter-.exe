@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<!DOCTYPE orders SYSTEM "ptsiiiorder155.dtd">
+<?xml-stylesheet type="text/xsl" href="ptsiiiorder.xsl" ?><orders>
+  <order>
+    <time day="06" hr="18" min="54" month="06" sec="48" yr="2025"/>
+    <po-number>T11590916</po-number>
+    <prod-site>ESCH - Elsevier India Pvt Ltd.</prod-site>
+    <opco>OCNL - Operating Company Elsevier B.V.</opco>
+    <stage step="PROOF"/>
+    <executor addressee="yes" type="TYPESETTER">
+      <exec-code>APTAR</exec-code>
+      <exec-name>Aptara Corp.</exec-name>
+      <aff>
+        <address>A 37, Sector 60</address>
+        <zipcode zipcode-pos="AFTERCTY">201301</zipcode>
+        <cty>Noida</cty>
+        <cny>India</cny>
+        <tel>911207182424</tel>
+      </aff>
+    </executor>
+    <executor addressee="no" type="WAREHOUSE">
+      <exec-code>AIRBU</exec-code>
+      <exec-name>Air Business Limited</exec-name>
+      <aff>
+        <address>The Merlin Centre</address>
+        <address-contd>Acrewood Way</address-contd>
+        <zipcode zipcode-pos="AFTERCTY">AL4 0JY</zipcode>
+        <cty>St Albans, Hertfordshire</cty>
+        <cny>United Kingdom</cny>
+        <tel>+44(0)1727 890600</tel>
+      </aff>
+    </executor>
+    <executor addressee="no" type="COMPOSITOR">
+      <exec-code>TNQCP</exec-code>
+      <exec-name>TnQ (CPC)</exec-name>
+      <aff>
+        <address>Plot no. 4/600, 4/197, Phase II</address>
+        <address-contd>Dr. VSI Estate, Kottivakkam</address-contd>
+        <zipcode zipcode-pos="AFTERCTY">600 041</zipcode>
+        <cty>Thiruvanmiyur, Chennai</cty>
+        <cny>India</cny>
+        <tel>+91-44-24426085,6,7</tel>
+        <fax>+91-44-24426088</fax>
+      </aff>
+    </executor>
+    <item-info>
+      <language>English</language>
+      <crossmark>no</crossmark>
+      <jid>MOLSTR</jid>
+      <issn>0022-2860</issn>
+      <aid>142943</aid>
+      <pii>S0022-2860(25)01616-3</pii>
+      <article-number>142943</article-number>
+      <doi>10.1016/j.molstruc.2025.142943</doi>
+      <item-group>SI030400</item-group>
+      <item-group-description>VSI: Organic fluorophores</item-group-description>
+      <item-title>Recent advances in electrical properties of single-molecule junctions with nitrogen-based heterocyclic molecules</item-title>
+      <eo-item-nr>MOLSTRUC-D-24-12679</eo-item-nr>
+      <e-submission-item-nr>MOLSTR_MOLSTRUC-D-24-12679</e-submission-item-nr>
+      <received-date>
+        <date day="30" month="12" yr="2024"/>
+      </received-date>
+      <revised-date>
+        <date day="19" month="05" yr="2025"/>
+      </revised-date>
+      <accept-date>
+        <date day="06" month="06" yr="2025"/>
+      </accept-date>
+      <cpc>Y</cpc>
+      <in-scope-cpc type="Y"/>
+      <prd-type-as-sent>FTP</prd-type-as-sent>
+      <milestone type="ACCEPTED"/>
+      <online-version type="print"/>
+      <pit>REV</pit>
+      <copy-edit-content required="no"/>
+      <no-mns-pages>1</no-mns-pages>
+      <no-phys-figs>11</no-phys-figs>
+      <no-bw-figs>0</no-bw-figs>
+      <no-web-colour-figs>11</no-web-colour-figs>
+      <no-colour-figs>0</no-colour-figs>
+      <no-e-components>0</no-e-components>
+      <physical-figures>
+        <figure>
+          <figure-nr>ga1</figure-nr>
+          <figure-type>COLOUR-IN-PRINT</figure-type>
+        </figure>
+        <figure>
+          <figure-nr>1</figure-nr>
+          <figure-type>COLOUR</figure-type>
+          <graphical-abstract grabs="no"/>
+        </figure>
+        <figure>
+          <figure-nr>2</figure-nr>
+          <figure-type>COLOUR</figure-type>
+          <graphical-abstract grabs="no"/>
+        </figure>
+        <figure>
+          <figure-nr>3</figure-nr>
+          <figure-type>COLOUR</figure-type>
+          <graphical-abstract grabs="no"/>
+        </figure>
+        <figure>
+          <figure-nr>4</figure-nr>
+          <figure-type>COLOUR</figure-type>
+          <graphical-abstract grabs="no"/>
+        </figure>
+        <figure>
+          <figure-nr>5</figure-nr>
+          <figure-type>COLOUR</figure-type>
+          <graphical-abstract grabs="no"/>
+        </figure>
+        <figure>
+          <figure-nr>6</figure-nr>
+          <figure-type>COLOUR</figure-type>
+          <graphical-abstract grabs="no"/>
+        </figure>
+        <figure>
+          <figure-nr>7</figure-nr>
+          <figure-type>COLOUR</figure-type>
+          <graphical-abstract grabs="no"/>
+        </figure>
+        <figure>
+          <figure-nr>8</figure-nr>
+          <figure-type>COLOUR</figure-type>
+          <graphical-abstract grabs="no"/>
+        </figure>
+        <figure>
+          <figure-nr>9</figure-nr>
+          <figure-type>COLOUR</figure-type>
+          <graphical-abstract grabs="no"/>
+        </figure>
+        <figure>
+          <figure-nr>10</figure-nr>
+          <figure-type>COLOUR</figure-type>
+          <graphical-abstract grabs="no"/>
+        </figure>
+      </physical-figures>
+      <righthand-start>N</righthand-start>
+      <copyright-status>001</copyright-status>
+      <first-author>
+        <degree>Dr.</degree>
+        <fnm>Nan</fnm>
+        <snm>Sun</snm>
+      </first-author>
+      <corr-author>
+        <degree>Prof.</degree>
+        <fnm>Xiao-Shun</fnm>
+        <snm>Zhou</snm>
+        <aff>
+          <inst-contd>Zhejiang Normal University</inst-contd>
+          <cty>Jinhua</cty>
+          <cny>China</cny>
+          <ead>xszhou@zjnu.edu.cn</ead>
+        </aff>
+      </corr-author>
+      <revised-proof>N</revised-proof>
+      <offprint-payment payment="no"/>
+    </item-info>
+  </order>
+</orders>

@@ -1,0 +1,718 @@
+<html>
+<head>
+<title>PTSIII Order</title>
+<script>
+    function expColl(dF,statusObj,object)
+        {
+            if (statusObj.status == 1)
+            { //1 is open, so close now
+                dF.appendChild(object.parentNode.removeChild(object.parentNode.lastChild));
+                object.removeChild(object.lastChild); //remove minus !!!second takes away plus of first!?
+                object.appendChild(document.createTextNode('+')); //put + in its place
+                statusObj.status = 0;
+            }
+            else
+            { //open
+                object.removeChild(object.lastChild); //remove plus
+                object.appendChild(document.createTextNode('-')); //put minus in its place
+                object.parentNode.appendChild(dF);
+                statusObj.status = 1;
+            }
+        }
+        var part0 = document.createDocumentFragment();
+        var expanded0 = {status:1};
+</script><style type="text/css"><!--
+				*
+					{
+						font-family: 'Arial Unicode MS', 'Arial, sans-serif';
+						font-size: 10pt;
+						color: black; 
+					}
+				body
+					{
+						background-color: wheat;
+						margin: 2em;
+					}
+				table
+					{
+						/* border: 2px solid darkgrey; */
+						border-collapse: collapse;
+					}
+				tr
+					{
+						vertical-align: top; 
+					}
+				th
+					{
+						text-align: left;
+					}
+				td
+					{
+						/* border: 1px solid lightgrey; */
+					}
+				.content
+					(
+						font-size: 6pt; 
+					}
+				.warning
+					{
+						background-color: red;
+					}
+				.grey
+					{
+						background-color: #DDDDDD; 
+					}
+            --></style>
+</head>
+<body style="font-family:'Arial Unicode MS'" onload="expColl(part0,expanded0,document.getElementById('xmlcode'))">
+  <h2>COVERSHEET</h2>
+<p><table width="100%">
+<tr>
+<td style="width:20%">Date:</td>
+<td style="width:80%">06 June 2025 (18:54:48)</td>
+</tr>
+<tr>
+<td>Purchase order number:</td>
+<td>T11590916</td>
+</tr>
+<tr>
+<td>Due date:</td>
+<td></td>
+</tr>
+<tr>
+<td>Production site:</td>
+<td>ESCH - Elsevier India Pvt Ltd.</td>
+</tr>
+<tr>
+<td>OPCO:</td>
+<td>OCNL - Operating Company Elsevier B.V.</td>
+</tr>
+<tr>
+<td>ISSN:</td>
+<td>0022-2860</td>
+</tr>
+<tr>
+<td>Stage:</td>
+<td>PROOF</td>
+</tr>
+<tr>
+<td>Supplier (typesetter):</td>
+<td>Aptara Corp.</td>
+</tr>
+<tr>
+<td>Supplier (compositor):</td>
+<td>TnQ (CPC)</td>
+</tr>
+</table></p>
+<p><hr size="1"></p>
+<p><p><table width="100%" cols="4">
+<tr>
+<td style="width:20%">Item:</td>
+<td colspan="3">MOLSTR 142943</td>
+</tr>
+<tr>
+<td style="width:20%">PII:</td>
+<td style="width:30%">S0022-2860(25)01616-3</td>
+<td style="width:20%">Nr of ms pages:</td>
+<td style="width:30%">1</td>
+</tr>
+<tr>
+<td>DOI:</td>
+<td>10.1016/j.molstruc.2025.142943</td>
+<td>Nr of figures:</td>
+<td>11</td>
+</tr>
+<tr>
+<td>Article number:</td>
+<td>142943</td>
+<td>Nr of B/W figures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>PIT:</td>
+<td>REV</td>
+<td>Nr of printed colour figures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Production type as sent:</td>
+<td>FTP</td>
+<td>Nr of web colour figures:</td>
+<td>11</td>
+</tr>
+<tr>
+<td>Milestone:</td>
+<td>ACCEPTED</td>
+<td>Nr of e-components:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Version nr:</td>
+<td colspan="3"></td>
+</tr>
+<tr>
+<td>Language:</td>
+<td>English</td>
+<td>Batch:</td>
+<td></td>
+</tr>
+<tr>
+<td>CrossMark:</td>
+<td>no</td>
+<td>Refers to:</td>
+<td></td>
+</tr>
+<tr>
+<td>Copyright status:</td>
+<td colspan="3">001</td>
+</tr>
+<tr>
+<td>Employer:</td>
+<td colspan="3"></td>
+</tr>
+<tr>
+<td>Copyright received date:</td>
+<td></td>
+<td>E submission item nr:</td>
+<td>MOLSTR_MOLSTRUC-D-24-12679</td>
+</tr>
+<tr>
+<td>License:</td>
+<td></td>
+<td>EO item nr:</td>
+<td>MOLSTRUC-D-24-12679</td>
+</tr>
+<tr>
+<td>Embargo:</td>
+<td></td>
+<td>Editor:</td>
+<td></td>
+</tr>
+<tr>
+<td>Embargo until stage:</td>
+<td></td>
+<td>Received date:</td>
+<td>
+        30 December 2024
+      </td>
+</tr>
+<tr>
+<td>Right-hand start:</td>
+<td>N</td>
+<td>Revised date:</td>
+<td>
+        19 May 2025
+      </td>
+</tr>
+<tr>
+<td>Online publication date:</td>
+<td></td>
+<td>Acceptance date:</td>
+<td>
+        06 June 2025
+      </td>
+</tr>
+<tr>
+<td>Online version:</td>
+<td>print</td>
+<td>CPC:</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>Corrections:</td>
+<td></td>
+<td>In scope for CPC:</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>Corrections-uri:</td>
+<td></td>
+<td>bam:stage:</td>
+<td></td>
+</tr>
+<tr>
+<td>Revised proof required:</td>
+<td colspan="3">N</td>
+</tr>
+<tr>
+<td>Offprint payment:</td>
+<td colspan="3">no</td>
+</tr>
+</table></p><p><hr size="1"></p><p><table width="100%">
+<tr>
+<td style="width:20%">Item title:</td>
+<td>Recent advances in electrical properties of single-molecule junctions with nitrogen-based heterocyclic molecules</td>
+</tr>
+<tr>
+<td>Item group:</td>
+<td>SI030400</td>
+</tr>
+<tr>
+<td>Item group description:</td>
+<td>VSI: Organic fluorophores</td>
+</tr>
+<tr>
+<td>Section:</td>
+<td></td>
+</tr>
+<tr>
+<td>Dochead:</td>
+<td></td>
+</tr>
+<tr>
+<td>Physical figures:</td>
+<td>
+        ga1; COLOUR-IN-PRINT<br>
+        1; COLOUR<br>
+        2; COLOUR<br>
+        3; COLOUR<br>
+        4; COLOUR<br>
+        5; COLOUR<br>
+        6; COLOUR<br>
+        7; COLOUR<br>
+        8; COLOUR<br>
+        9; COLOUR<br>
+        10; COLOUR
+      </td>
+</tr>
+<tr>
+<td>E-components:</td>
+<td></td>
+</tr>
+<tr>
+<td>Funding:</td>
+<td></td>
+</tr>
+<tr>
+<td>First author:</td>
+<td>Dr. Nan Sun</td>
+</tr>
+<tr>
+<td>Corresponding author:</td>
+<td>Prof. Xiao-Shun Zhou<br>Zhejiang Normal University<br>Jinhua <br>China<br>E-mail: xszhou@zjnu.edu.cn</td>
+</tr>
+</table></p><p><hr size="1"></p></p>
+<div id="" style="background-color:#D7FFCF; position: relative; left:0.3%; border-style:solid; border-width:1; padding:5">
+<span style="font-size:70%">XML code</span><br><span id="xmlcode" onclick="expColl(part0,expanded0,this)" style="color:red; font-weight:900; font-size:150%; font-family:courier" onmouseover="this.style.cursor='hand'">-</span><div style="position: relative; margin-left:0%;overflow: scroll;">
+<span style="color:red">&lt;orders&gt;</span>
+  <div style="position: relative; margin-left:0.5%;overflow: scroll;">
+<span style="color:red">&lt;order&gt;</span>
+    <div style="position: relative; margin-left:1%;overflow: scroll;">
+<span style="color:red">&lt;time day="06" hr="18" min="54" month="06" sec="48" yr="2025"&gt;</span><span style="color:red">&lt;/time&gt;</span>
+</div>
+    <div style="position: relative; margin-left:1%;overflow: scroll;">
+<span style="color:red">&lt;po-number&gt;</span>T11590916<span style="color:red">&lt;/po-number&gt;</span>
+</div>
+    <div style="position: relative; margin-left:1%;overflow: scroll;">
+<span style="color:red">&lt;prod-site&gt;</span>ESCH - Elsevier India Pvt Ltd.<span style="color:red">&lt;/prod-site&gt;</span>
+</div>
+    <div style="position: relative; margin-left:1%;overflow: scroll;">
+<span style="color:red">&lt;opco&gt;</span>OCNL - Operating Company Elsevier B.V.<span style="color:red">&lt;/opco&gt;</span>
+</div>
+    <div style="position: relative; margin-left:1%;overflow: scroll;">
+<span style="color:red">&lt;stage step="PROOF"&gt;</span><span style="color:red">&lt;/stage&gt;</span>
+</div>
+    <div style="position: relative; margin-left:1%;overflow: scroll;">
+<span style="color:red">&lt;executor addressee="yes" type="TYPESETTER"&gt;</span>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;exec-code&gt;</span>APTAR<span style="color:red">&lt;/exec-code&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;exec-name&gt;</span>Aptara Corp.<span style="color:red">&lt;/exec-name&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;aff&gt;</span>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;address&gt;</span>A 37, Sector 60<span style="color:red">&lt;/address&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;zipcode zipcode-pos="AFTERCTY"&gt;</span>201301<span style="color:red">&lt;/zipcode&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;cty&gt;</span>Noida<span style="color:red">&lt;/cty&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;cny&gt;</span>India<span style="color:red">&lt;/cny&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;tel&gt;</span>911207182424<span style="color:red">&lt;/tel&gt;</span>
+</div>
+      <span style="color:red">&lt;/aff&gt;</span>
+</div>
+    <span style="color:red">&lt;/executor&gt;</span>
+</div>
+    <div style="position: relative; margin-left:1%;overflow: scroll;">
+<span style="color:red">&lt;executor addressee="no" type="WAREHOUSE"&gt;</span>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;exec-code&gt;</span>AIRBU<span style="color:red">&lt;/exec-code&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;exec-name&gt;</span>Air Business Limited<span style="color:red">&lt;/exec-name&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;aff&gt;</span>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;address&gt;</span>The Merlin Centre<span style="color:red">&lt;/address&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;address-contd&gt;</span>Acrewood Way<span style="color:red">&lt;/address-contd&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;zipcode zipcode-pos="AFTERCTY"&gt;</span>AL4 0JY<span style="color:red">&lt;/zipcode&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;cty&gt;</span>St Albans, Hertfordshire<span style="color:red">&lt;/cty&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;cny&gt;</span>United Kingdom<span style="color:red">&lt;/cny&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;tel&gt;</span>+44(0)1727 890600<span style="color:red">&lt;/tel&gt;</span>
+</div>
+      <span style="color:red">&lt;/aff&gt;</span>
+</div>
+    <span style="color:red">&lt;/executor&gt;</span>
+</div>
+    <div style="position: relative; margin-left:1%;overflow: scroll;">
+<span style="color:red">&lt;executor addressee="no" type="COMPOSITOR"&gt;</span>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;exec-code&gt;</span>TNQCP<span style="color:red">&lt;/exec-code&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;exec-name&gt;</span>TnQ (CPC)<span style="color:red">&lt;/exec-name&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;aff&gt;</span>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;address&gt;</span>Plot no. 4/600, 4/197, Phase II<span style="color:red">&lt;/address&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;address-contd&gt;</span>Dr. VSI Estate, Kottivakkam<span style="color:red">&lt;/address-contd&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;zipcode zipcode-pos="AFTERCTY"&gt;</span>600 041<span style="color:red">&lt;/zipcode&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;cty&gt;</span>Thiruvanmiyur, Chennai<span style="color:red">&lt;/cty&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;cny&gt;</span>India<span style="color:red">&lt;/cny&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;tel&gt;</span>+91-44-24426085,6,7<span style="color:red">&lt;/tel&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;fax&gt;</span>+91-44-24426088<span style="color:red">&lt;/fax&gt;</span>
+</div>
+      <span style="color:red">&lt;/aff&gt;</span>
+</div>
+    <span style="color:red">&lt;/executor&gt;</span>
+</div>
+    <div style="position: relative; margin-left:1%;overflow: scroll;">
+<span style="color:red">&lt;item-info&gt;</span>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;language&gt;</span>English<span style="color:red">&lt;/language&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;crossmark&gt;</span>no<span style="color:red">&lt;/crossmark&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;jid&gt;</span>MOLSTR<span style="color:red">&lt;/jid&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;issn&gt;</span>0022-2860<span style="color:red">&lt;/issn&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;aid&gt;</span>142943<span style="color:red">&lt;/aid&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;pii&gt;</span>S0022-2860(25)01616-3<span style="color:red">&lt;/pii&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;article-number&gt;</span>142943<span style="color:red">&lt;/article-number&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;doi&gt;</span>10.1016/j.molstruc.2025.142943<span style="color:red">&lt;/doi&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;item-group&gt;</span>SI030400<span style="color:red">&lt;/item-group&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;item-group-description&gt;</span>VSI: Organic fluorophores<span style="color:red">&lt;/item-group-description&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;item-title&gt;</span>Recent advances in electrical properties of single-molecule junctions with nitrogen-based heterocyclic molecules<span style="color:red">&lt;/item-title&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;eo-item-nr&gt;</span>MOLSTRUC-D-24-12679<span style="color:red">&lt;/eo-item-nr&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;e-submission-item-nr&gt;</span>MOLSTR_MOLSTRUC-D-24-12679<span style="color:red">&lt;/e-submission-item-nr&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;received-date&gt;</span>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;date day="30" month="12" yr="2024"&gt;</span><span style="color:red">&lt;/date&gt;</span>
+</div>
+      <span style="color:red">&lt;/received-date&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;revised-date&gt;</span>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;date day="19" month="05" yr="2025"&gt;</span><span style="color:red">&lt;/date&gt;</span>
+</div>
+      <span style="color:red">&lt;/revised-date&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;accept-date&gt;</span>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;date day="06" month="06" yr="2025"&gt;</span><span style="color:red">&lt;/date&gt;</span>
+</div>
+      <span style="color:red">&lt;/accept-date&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;cpc&gt;</span>Y<span style="color:red">&lt;/cpc&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;in-scope-cpc type="Y"&gt;</span><span style="color:red">&lt;/in-scope-cpc&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;prd-type-as-sent&gt;</span>FTP<span style="color:red">&lt;/prd-type-as-sent&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;milestone type="ACCEPTED"&gt;</span><span style="color:red">&lt;/milestone&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;online-version type="print"&gt;</span><span style="color:red">&lt;/online-version&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;pit&gt;</span>REV<span style="color:red">&lt;/pit&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;copy-edit-content required="no"&gt;</span><span style="color:red">&lt;/copy-edit-content&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;no-mns-pages&gt;</span>1<span style="color:red">&lt;/no-mns-pages&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;no-phys-figs&gt;</span>11<span style="color:red">&lt;/no-phys-figs&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;no-bw-figs&gt;</span>0<span style="color:red">&lt;/no-bw-figs&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;no-web-colour-figs&gt;</span>11<span style="color:red">&lt;/no-web-colour-figs&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;no-colour-figs&gt;</span>0<span style="color:red">&lt;/no-colour-figs&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;no-e-components&gt;</span>0<span style="color:red">&lt;/no-e-components&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;physical-figures&gt;</span>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;figure&gt;</span>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;figure-nr&gt;</span>ga1<span style="color:red">&lt;/figure-nr&gt;</span>
+</div>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;figure-type&gt;</span>COLOUR-IN-PRINT<span style="color:red">&lt;/figure-type&gt;</span>
+</div>
+        <span style="color:red">&lt;/figure&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;figure&gt;</span>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;figure-nr&gt;</span>1<span style="color:red">&lt;/figure-nr&gt;</span>
+</div>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;figure-type&gt;</span>COLOUR<span style="color:red">&lt;/figure-type&gt;</span>
+</div>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;graphical-abstract grabs="no"&gt;</span><span style="color:red">&lt;/graphical-abstract&gt;</span>
+</div>
+        <span style="color:red">&lt;/figure&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;figure&gt;</span>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;figure-nr&gt;</span>2<span style="color:red">&lt;/figure-nr&gt;</span>
+</div>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;figure-type&gt;</span>COLOUR<span style="color:red">&lt;/figure-type&gt;</span>
+</div>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;graphical-abstract grabs="no"&gt;</span><span style="color:red">&lt;/graphical-abstract&gt;</span>
+</div>
+        <span style="color:red">&lt;/figure&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;figure&gt;</span>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;figure-nr&gt;</span>3<span style="color:red">&lt;/figure-nr&gt;</span>
+</div>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;figure-type&gt;</span>COLOUR<span style="color:red">&lt;/figure-type&gt;</span>
+</div>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;graphical-abstract grabs="no"&gt;</span><span style="color:red">&lt;/graphical-abstract&gt;</span>
+</div>
+        <span style="color:red">&lt;/figure&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;figure&gt;</span>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;figure-nr&gt;</span>4<span style="color:red">&lt;/figure-nr&gt;</span>
+</div>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;figure-type&gt;</span>COLOUR<span style="color:red">&lt;/figure-type&gt;</span>
+</div>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;graphical-abstract grabs="no"&gt;</span><span style="color:red">&lt;/graphical-abstract&gt;</span>
+</div>
+        <span style="color:red">&lt;/figure&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;figure&gt;</span>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;figure-nr&gt;</span>5<span style="color:red">&lt;/figure-nr&gt;</span>
+</div>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;figure-type&gt;</span>COLOUR<span style="color:red">&lt;/figure-type&gt;</span>
+</div>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;graphical-abstract grabs="no"&gt;</span><span style="color:red">&lt;/graphical-abstract&gt;</span>
+</div>
+        <span style="color:red">&lt;/figure&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;figure&gt;</span>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;figure-nr&gt;</span>6<span style="color:red">&lt;/figure-nr&gt;</span>
+</div>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;figure-type&gt;</span>COLOUR<span style="color:red">&lt;/figure-type&gt;</span>
+</div>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;graphical-abstract grabs="no"&gt;</span><span style="color:red">&lt;/graphical-abstract&gt;</span>
+</div>
+        <span style="color:red">&lt;/figure&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;figure&gt;</span>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;figure-nr&gt;</span>7<span style="color:red">&lt;/figure-nr&gt;</span>
+</div>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;figure-type&gt;</span>COLOUR<span style="color:red">&lt;/figure-type&gt;</span>
+</div>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;graphical-abstract grabs="no"&gt;</span><span style="color:red">&lt;/graphical-abstract&gt;</span>
+</div>
+        <span style="color:red">&lt;/figure&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;figure&gt;</span>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;figure-nr&gt;</span>8<span style="color:red">&lt;/figure-nr&gt;</span>
+</div>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;figure-type&gt;</span>COLOUR<span style="color:red">&lt;/figure-type&gt;</span>
+</div>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;graphical-abstract grabs="no"&gt;</span><span style="color:red">&lt;/graphical-abstract&gt;</span>
+</div>
+        <span style="color:red">&lt;/figure&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;figure&gt;</span>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;figure-nr&gt;</span>9<span style="color:red">&lt;/figure-nr&gt;</span>
+</div>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;figure-type&gt;</span>COLOUR<span style="color:red">&lt;/figure-type&gt;</span>
+</div>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;graphical-abstract grabs="no"&gt;</span><span style="color:red">&lt;/graphical-abstract&gt;</span>
+</div>
+        <span style="color:red">&lt;/figure&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;figure&gt;</span>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;figure-nr&gt;</span>10<span style="color:red">&lt;/figure-nr&gt;</span>
+</div>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;figure-type&gt;</span>COLOUR<span style="color:red">&lt;/figure-type&gt;</span>
+</div>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;graphical-abstract grabs="no"&gt;</span><span style="color:red">&lt;/graphical-abstract&gt;</span>
+</div>
+        <span style="color:red">&lt;/figure&gt;</span>
+</div>
+      <span style="color:red">&lt;/physical-figures&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;righthand-start&gt;</span>N<span style="color:red">&lt;/righthand-start&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;copyright-status&gt;</span>001<span style="color:red">&lt;/copyright-status&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;first-author&gt;</span>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;degree&gt;</span>Dr.<span style="color:red">&lt;/degree&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;fnm&gt;</span>Nan<span style="color:red">&lt;/fnm&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;snm&gt;</span>Sun<span style="color:red">&lt;/snm&gt;</span>
+</div>
+      <span style="color:red">&lt;/first-author&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;corr-author&gt;</span>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;degree&gt;</span>Prof.<span style="color:red">&lt;/degree&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;fnm&gt;</span>Xiao-Shun<span style="color:red">&lt;/fnm&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;snm&gt;</span>Zhou<span style="color:red">&lt;/snm&gt;</span>
+</div>
+        <div style="position: relative; margin-left:2%;overflow: scroll;">
+<span style="color:red">&lt;aff&gt;</span>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;inst-contd&gt;</span>Zhejiang Normal University<span style="color:red">&lt;/inst-contd&gt;</span>
+</div>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;cty&gt;</span>Jinhua<span style="color:red">&lt;/cty&gt;</span>
+</div>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;cny&gt;</span>China<span style="color:red">&lt;/cny&gt;</span>
+</div>
+          <div style="position: relative; margin-left:2.5%;overflow: scroll;">
+<span style="color:red">&lt;ead&gt;</span>xszhou@zjnu.edu.cn<span style="color:red">&lt;/ead&gt;</span>
+</div>
+        <span style="color:red">&lt;/aff&gt;</span>
+</div>
+      <span style="color:red">&lt;/corr-author&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;revised-proof&gt;</span>N<span style="color:red">&lt;/revised-proof&gt;</span>
+</div>
+      <div style="position: relative; margin-left:1.5%;overflow: scroll;">
+<span style="color:red">&lt;offprint-payment payment="no"&gt;</span><span style="color:red">&lt;/offprint-payment&gt;</span>
+</div>
+    <span style="color:red">&lt;/item-info&gt;</span>
+</div>
+  <span style="color:red">&lt;/order&gt;</span>
+</div>
+<span style="color:red">&lt;/orders&gt;</span>
+</div>
+</div>
+</body>
+</html>
